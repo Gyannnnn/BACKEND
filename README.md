@@ -33,6 +33,7 @@ This repository is primarily for my personal learning and reference. However, if
 
 ## You Can Contact Me Here
 ```
-1.instagram https://www.instagram.com/gyan.css/
-2.LinkedIn https://www.linkedin.com/in/gyanaranjan-patra-0b17a4246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+
+1. [instagram](https://www.instagram.com/gyan.css/)
+2.[LinkedIn](https://www.linkedin.com/in/gyanaranjan-patra-0b17a4246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
