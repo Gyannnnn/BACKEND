@@ -1,0 +1,11 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "This repository contains all the code and projects I have developed while learning backend development. It serves as a comprehensive collection of my progress, examples, and exercises from various tutorials and courses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gyanranjan Patra",
+  "license": "ISC"
+}
