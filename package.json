@@ -10,6 +10,9 @@
   "author": "Gyanranjan Patra",
   "license": "ISC",
   "dependencies": {
-    "cookie-parser": "^1.4.6"
-  }
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  },
+  "keywords": []
 }
