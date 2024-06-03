@@ -30,39 +30,47 @@
 // }
 // data();
 
-
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017").then(() => {
-    console.log("Connectd To The MongoDb Successfully");
-}).catch((err) => {
-    console.log(err);
 
-})
+mongoose.connect("mongodb://localhost:27017/yourDatabaseName")
+    .then(() => {
+        console.log("Connected To The MongoDB Successfully");
+    })
+    .catch((err) => {
+        console.log(err);
+    });
 
 // creation of schema
-
-const student = new mongoose.Schema({
+const studentSchema = new mongoose.Schema({
     Name: String,
     Age: Number,
     Workout: Boolean
+});
 
-})
 // creation of model
-const Student = mongoose.model("StudentsData", student);
+const Student = mongoose.model("Student", studentSchema);
 
 const data = async () => {
-    const gyan = new Student({
-        Name: "Gyanranjan Patra",
-        Age: 20,
-        Workout: true
-    })
-    const gyan2 = new Student({
-        Name:"Runa",
-        Age:90,
-        Workout:false
-    })
+    const ss = await Student.find({Age:{$eq:6}})
+    console.log(ss)
+};
 
-    await gyan.save()
-    await gyan2.save()
-}
-data()
+data();
+
+
+// const data = async () => {
+//     const gyan = new Student({
+//         Name: "Gyanranjan Patra",
+//         Age: 20,
+//         Workout: true
+//     })
+//     const gyan2 = new Student({
+//         Name:"Runa",
+//         Age:90,
+//         Workout:false
+//     })
+
+//     await gyan.save()
+//     await gyan2.save()
+// }
+// data()
