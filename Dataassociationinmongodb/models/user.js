@@ -1,12 +1,18 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose")
 mongoose.connect("mongodb://127.0.0.1/testingthedatabase");
 
 const userShema = mongoose.Schema({
-    username:String,
+    username:{
+        type:String
+    },
     email:String,
     age:Number,
-    posts:Array
+    posts:[
+        {
+            type:mongoose.Schema.Types.ObjectId,
+            ref:'post'
+        }
+    ]
 });
 
-module.exports =  mongoose.model("user",userShema)
-
+module.exports = mongoose.model('user',userShema);
